@@ -6,6 +6,14 @@
 		<meta name="viewport" content="width=device-width" />
 		%sveltekit.head%
 	</head>
+	<style>
+		@font-face {
+		font-family: 'Balloon';
+		font-style: normal;
+		font-weight: 400;
+		src: url('%sveltekit.assets%/Balloon.woff') format('woff');
+	}
+	</style>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
