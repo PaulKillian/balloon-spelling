@@ -1,5 +1,6 @@
 <script>
 	import LettersToPick from "./LettersToPick.svelte";
+	import Red from './Red.svelte';
 </script>
 
 <svelte:head>
@@ -8,7 +9,7 @@
 </svelte:head>
 
 <section>
-	<LettersToPick />
+	<Red />
 </section>
 
 <style>

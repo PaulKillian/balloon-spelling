@@ -1,43 +1,16 @@
 <script>
-  import ConfettiGenerator from "confetti-js";
-  let redLettersPick = ['r', 'w', 'e', 'k', 'd']
-  /**
-	 * @type {any[]}
-	 */
-  export let pickedLetters = []
-  export let confetti = false
-  import gsap from 'gsap'
-  /**
-	 * @param {any} event
-	 */
-  function handleClick(event) {
-    var tl = gsap.timeline();
-    tl.to(`.${event.target.innerText}`, {
-      rotationY: 27, y: -300, duration: .5,
-      onComplete() {
-        pickedLetters.push(event.target.innerText)
-        let string = pickedLetters.toString()
-        string=string.replaceAll(',','');
-      }
-    })
+    import { confetti } from "./confetti.svelte";
+    import { handleClick, pickedLetters } from "./handleClick.svelte";
+    import gsap from 'gsap'
+
+    let redLettersPick = ['r', 'w', 'e', 'k', 'd']
 
     function groupLetters() {
       gsap.to('.r', {rotationY: 27, x: 70, duration: .5});
       gsap.to('.d', {rotationY: 27, x: -70, duration: .5});
-      var confettiSettings = { target: 'my-canvas' };
-      // @ts-ignore
-      var confetti = new ConfettiGenerator(confettiSettings);
-      confetti.render();
+      confetti()
     } 
-  }
-
-   
 </script>
-
-<svelte:head>
-	<title>Balloon Spelling</title>
-	<meta name="description" content="Spelling with Balloons" />
-</svelte:head>
 
 <canvas id="my-canvas"></canvas>
 <div id={'buttonDiv'}>
