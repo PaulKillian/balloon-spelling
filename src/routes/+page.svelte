@@ -1,5 +1,4 @@
 <script>
-	import LettersToPick from "./LettersToPick.svelte";
 	import Red from './Red.svelte';
 </script>
 

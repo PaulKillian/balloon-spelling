@@ -1,22 +1,19 @@
 <script>
-    import { confetti } from "./confetti.svelte";
-    import { handleClick, pickedLetters } from "./handleClick.svelte";
-    import gsap from 'gsap'
+    import { handleClick } from "./handleClick.svelte";
 
     let redLettersPick = ['r', 'w', 'e', 'k', 'd']
-
-    function groupLetters() {
-      gsap.to('.r', {rotationY: 27, x: 70, duration: .5});
-      gsap.to('.d', {rotationY: 27, x: -70, duration: .5});
-      confetti()
-    } 
+    let word = 'red'
+    let group = [
+      {letter: 'r', distance: 70}, 
+      {letter: 'd', distance: -70}
+    ]
 </script>
 
 <canvas id="my-canvas"></canvas>
 <div id={'buttonDiv'}>
   <div>
     {#each redLettersPick as letter}
-      <button on:click={handleClick}
+      <button on:click={() => handleClick(event, word, group)}
         class={letter}
         >{letter}
       </button>
@@ -24,6 +21,7 @@
   </div>
   <h1>How do you spell the word, Red?</h1>
 </div>
+<a href="/blue">Next Question</a>
 
 <style>
 	button {
