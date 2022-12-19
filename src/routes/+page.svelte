@@ -1,17 +1,21 @@
 <script>
-	import Red from './Red.svelte';
 </script>
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="Spelling with Balloons" content="Balloon Spelling" />
 </svelte:head>
 
+
 <section>
-	<Red />
+  <a href="/red">Play!</a>
 </section>
 
+
 <style>
+	body {
+		overflow-y: hidden;
+	}
 	section {
 		display: flex;
 		justify-content: center;

@@ -3,8 +3,8 @@
   import gsap from 'gsap'
 	import PageTransition from "../pageTransition.svelte";
 
-  let letters = {b: 'c', r: 'i', l: 'c', k: 'i', u: 'c', e: 'c'}
-  let word = 'blue'
+  let letters = {w: 'c', h: 'c', f: 'i', i: 'c', t: 'c', n: 'i', e: 'c'}
+  let word =  'white'
   let group = [
     {letter: 'b', distance: 100}, 
     {letter: 'u', distance: -100},
@@ -25,8 +25,8 @@
         </button>
       {/each}
     </div>
-    <h1>How do you spell the word, Blue?</h1>
-    <a href="/orange">Next Question</a>
+    <h1>How do you spell the word, White?</h1>
+    <a href="/violet">Next Question</a>
   </div>
 </section>
 </PageTransition>
@@ -35,13 +35,13 @@
 
 <style>
   section {
-    background-color: orange;
-	}
+    background-color: violet;
+  }
 
 	button {
 		font-family: 'Balloon', sans-serif;
     font-size: 300px;
-		color: blue;
+		color: white;
 		margin: 5px;
 		cursor: pointer;
 	}

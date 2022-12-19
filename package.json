@@ -38,6 +38,7 @@
 	"type": "module",
 	"dependencies": {
 		"confetti-js": "^0.0.18",
-		"gsap": "^3.11.3"
+		"gsap": "^3.11.3",
+		"jquery": "^3.6.2"
 	}
 }

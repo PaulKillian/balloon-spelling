@@ -1,10 +1,9 @@
 <script>
   import { handleClick } from "../handleClick.svelte";
-  import gsap from 'gsap'
 	import PageTransition from "../pageTransition.svelte";
 
-  let letters = {b: 'c', r: 'i', l: 'c', k: 'i', u: 'c', e: 'c'}
-  let word = 'blue'
+  let letters = {p: 'c', v: 'i', i: 'c', r: 'c', n: 'c', k: 'c'}
+  let word = 'pink'
   let group = [
     {letter: 'b', distance: 100}, 
     {letter: 'u', distance: -100},
@@ -25,8 +24,8 @@
         </button>
       {/each}
     </div>
-    <h1>How do you spell the word, Blue?</h1>
-    <a href="/orange">Next Question</a>
+    <h1>How do you spell the word, Pink?</h1>
+    <a href="/brown">Next Question</a>
   </div>
 </section>
 </PageTransition>
@@ -34,14 +33,14 @@
 
 
 <style>
-  section {
-    background-color: orange;
-	}
+   section {
+    background-color: brown;
+  }
 
 	button {
 		font-family: 'Balloon', sans-serif;
     font-size: 300px;
-		color: blue;
+		color: pink;
 		margin: 5px;
 		cursor: pointer;
 	}
