@@ -35,7 +35,7 @@
 
 <style>
   section {
-    background-image: url('$lib/images/bg11.jpeg');
+    background-image: url('$lib/images/bg11.jpg');
 	}
 
 	button {
