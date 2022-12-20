@@ -34,7 +34,7 @@
 
 
 <style>
-  xsection {
+  section {
     background-image: url('$lib/images/bg7.jpeg');
 	}
 
