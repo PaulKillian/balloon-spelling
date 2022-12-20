@@ -36,21 +36,13 @@
 
 <style>
   section {
-    background-color: pink;
-  }
-  section {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		height: 100vh; 
+    background-image: url('$lib/images/bg3.jpeg');
 	}
 
 	button {
 		font-family: 'Balloon', sans-serif;
     font-size: 300px;
-		color: orange;
+		color: #FF9F1C;
 		margin: 5px;
 		cursor: pointer;
 	}

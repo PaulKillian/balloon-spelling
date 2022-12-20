@@ -35,12 +35,7 @@
 
 <style>
   section {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		height: 100vh; 
+    background-image: url('$lib/images/bg4.jpeg');
 	}
 
 	button {

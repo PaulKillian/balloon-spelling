@@ -33,19 +33,23 @@
 
 <style>
   section {
-    background-color: blue;
-  }
-  
+    background-image: url('$lib/images/bg6.jpeg');
+	}
+
 	button {
 		font-family: 'Balloon', sans-serif;
     font-size: 300px;
-		color: red;
+		color: #EF233C;
 		margin: 5px;
 		cursor: pointer;
 	}
 
+  a {
+    color: white;
+  }
   h1 {
     font-size: 30px;
+    color: white;
   }
 
   canvas {

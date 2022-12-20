@@ -35,8 +35,8 @@
 
 <style>
   section {
-    background-color: violet;
-  }
+    background-image: url('$lib/images/bg10.jpeg');
+	}
 
 	button {
 		font-family: 'Balloon', sans-serif;

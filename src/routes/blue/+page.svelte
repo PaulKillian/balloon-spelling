@@ -2,15 +2,28 @@
   import { handleClick } from "../handleClick.svelte";
   import gsap from 'gsap'
 	import PageTransition from "../pageTransition.svelte";
+  import bgImg from '$lib/images/bg.jpeg';
 
+  // document.body.style.backgroundImage = `url(${bgImg})`;
   let letters = {b: 'c', r: 'i', l: 'c', k: 'i', u: 'c', e: 'c'}
   let word = 'blue'
   let group = [
     {letter: 'b', distance: 100}, 
     {letter: 'u', distance: -100},
     {letter: 'e', distance: -110}
-  ]    
+  ]
 </script>
+
+<!-- <svelte:head>
+  <style>
+    body {
+      background-color: blue;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  </style>
+</svelte:head> -->
 
 <PageTransition>
   <section id={'section'}>
@@ -28,6 +41,7 @@
     <h1>How do you spell the word, Blue?</h1>
     <a href="/orange">Next Question</a>
   </div>
+  <!-- <img src={bgImg} /> -->
 </section>
 </PageTransition>
 
@@ -35,7 +49,7 @@
 
 <style>
   section {
-    background-color: orange;
+    background-image: url('$lib/images/bg.jpeg');
 	}
 
 	button {

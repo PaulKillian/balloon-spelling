@@ -35,13 +35,13 @@
 
 <style>
    section {
-    background-color: tan;
-  }
+    background-image: url('$lib/images/bg2.jpeg');
+	}
 
 	button {
 		font-family: 'Balloon', sans-serif;
     font-size: 300px;
-		color: brown;
+		color: #7F5539;
 		margin: 5px;
 		cursor: pointer;
 	}

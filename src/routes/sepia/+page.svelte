@@ -34,8 +34,8 @@
 
 
 <style>
-  section {
-		background-color: peachpuff;
+  xsection {
+    background-image: url('$lib/images/bg7.jpeg');
 	}
 
 	button {
