@@ -38,13 +38,14 @@
     background-image: url('$lib/images/bg10.jpeg');
 	}
 
-	button {
-		font-family: 'Balloon', sans-serif;
-    font-size: 300px;
-		color: violet;
-		margin: 5px;
-		cursor: pointer;
-	}
+   button {
+     font-family: 'Balloon', sans-serif;
+     font-size: 300px;
+     color: violet;
+     margin: 5px; 
+     cursor: pointer;
+     background-color: white
+  }
 
   h1 {
     font-size: 30px;
