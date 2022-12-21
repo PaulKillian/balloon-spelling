@@ -1,7 +1,6 @@
 <script context="module">
   import { handleClick, wrongLetters, won } from "../handleClick.svelte";
   import PageTransition from "../pageTransition.svelte";
-  import FadeOut from "../FadeOut.svelte";
 
   let letters = {
     r:'c', h: 'i', e: 'c', l: 'i', d: 'c'
@@ -22,9 +21,6 @@
 <PageTransition>
   <section id={'section'}>
   <canvas id="my-canvas"></canvas>
-  {#if won}
-    <h1>{word}</h1>
-  {/if}
   <div id={'buttonDiv'}>
     <div>
       {#each Object.entries(letters) as [letter, correct]}
@@ -36,7 +32,7 @@
       {/each}
     </div>
     <h1>How do you spell the word, Red?</h1>
-    <a href="/red">Next Question</a>
+    <a href="/blue">Next Question</a>
   </div>
 </section>
 </PageTransition>
