@@ -43,7 +43,6 @@
      color: violet;
      margin: 5px; 
      cursor: pointer;
-     background-color: white
   }
 
   h1 {
