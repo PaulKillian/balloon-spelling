@@ -133,12 +133,3 @@ h1 {
     z-index: 1;
     pointer-events: none;
   }
-
-button {
-  animation:balloons 4s ease-in-out infinite;
-}
-
-@keyframes balloons {
-  0%,100%{ transform:translateY(0) rotate(-4deg); }
-  50%{ transform:translateY(-25px) rotate(4deg); }
-}
