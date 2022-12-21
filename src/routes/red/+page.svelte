@@ -20,7 +20,6 @@
     <div id={'buttonDiv'}>
      {#if won}
       <FadeOut>
-       <div>
         {#each Object.entries(letters) as [letter, correct]}
           <button on:click={() => handleClick(event, word, group)}
             id={letter}
@@ -28,7 +27,6 @@
             >{letter}
           </button>
         {/each}
-      </div>
      </FadeOut>
      {/if}
       <h1>How do you spell the word, Red?</h1>
