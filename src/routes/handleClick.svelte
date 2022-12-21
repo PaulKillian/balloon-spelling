@@ -9,6 +9,7 @@
      export let wrongLetters = []
      let letter = ''
      let incorrect = ''
+     export let won = false
     /**
 	 * @param {string} word
 	 * @param {{letter: string;distance: number;}[] | undefined} [group]
@@ -39,6 +40,7 @@
             gsap.to(`#${element.letter}`, 
             {rotationY: 27, x: element.distance, duration: .5})
             confetti()
+            won = true
             pickedLetters = []
           });  
         }
