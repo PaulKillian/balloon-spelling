@@ -11,11 +11,6 @@
     {letter: 'd', distance: -100}
   ]
   
-  let won = false
-  export function updateStatus() {
-    won = true
-  }
-  
 </script>
 
 <PageTransition>
