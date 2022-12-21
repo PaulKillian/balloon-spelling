@@ -52,12 +52,13 @@
     background-image: url('$lib/images/bg.jpeg');
 	}
 
-	button {
+  button {
+    font-family: 'Bungee Shade', cursive;
     font-size: 300px;
-		color: blue;
-		margin: 5px;
-		cursor: pointer;
-	}
+    color: blue;
+    margin: 5px;
+    cursor: pointer;
+  }
 
   h1 {
     font-size: 30px;
