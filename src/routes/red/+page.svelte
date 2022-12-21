@@ -11,6 +11,7 @@
     {letter: 'r', distance: 100}, 
     {letter: 'd', distance: -100}
   ]
+  console.log(won)
 </script>
 
 <PageTransition>
