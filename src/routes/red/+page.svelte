@@ -16,22 +16,21 @@
 
 <PageTransition>
   <section id={'section'}>
-    <canvas id="my-canvas"></canvas>
-    {#if won}
-      <h1>{word}</h1>
-    {/if}
-    <div id={'buttonDiv'}>
-     {#each Object.entries(letters) as [letter, correct]}
-       <button on:click={() => handleClick(event, word, group)}
-       id={letter}
-       class={correct}
-       >{letter}
-     </button>
-    {/each}
-    <h1>How do you spell the word, Red?</h1>
-    <a href="/blue">Next Question</a>
+  <canvas id="my-canvas"></canvas>
+  <div id={'buttonDiv'}>
+    <div>
+      {#each Object.entries(letters) as [letter, correct]}
+        <button on:click={() => handleClick(event, word, group)}
+          id={letter}
+          class={correct}
+          >{letter}
+        </button>
+      {/each}
     </div>
-  </section>
+    <h1>How do you spell the word, Red?</h1>
+    <a href="/red">Next Question</a>
+  </div>
+</section>
 </PageTransition>
 
 <style>
