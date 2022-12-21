@@ -17,6 +17,9 @@
 <PageTransition>
   <section id={'section'}>
   <canvas id="my-canvas"></canvas>
+  {#if won}
+    <h1>{word}</h1>
+  {/if}
   <div id={'buttonDiv'}>
     <div>
       {#each Object.entries(letters) as [letter, correct]}
