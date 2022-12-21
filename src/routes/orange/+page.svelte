@@ -40,7 +40,7 @@
 	}
 
 	button {
-    font-size: 300px;
+    font-size: 100px;
 		color: #FF9F1C;
 		margin: 5px;
 		cursor: pointer;

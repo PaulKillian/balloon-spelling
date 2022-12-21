@@ -37,7 +37,7 @@
 	}
 
 	button {
-    font-size: 300px;
+    font-size: 100px;
 		color: #EF233C;
 		margin: 5px;
 		cursor: pointer;

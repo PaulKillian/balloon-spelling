@@ -54,7 +54,7 @@
 
   button {
     font-family: 'Bungee Shade', cursive;
-    font-size: 300px;
+    font-size: 100px;
     color: blue;
     margin: 5px;
     cursor: pointer;
