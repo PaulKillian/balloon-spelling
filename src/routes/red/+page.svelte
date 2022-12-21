@@ -17,20 +17,19 @@
 <PageTransition>
   <section id={'section'}>
     <canvas id="my-canvas"></canvas>
+    {#if won}
+      <h1>{word}</h1>
+    {/if}
     <div id={'buttonDiv'}>
-     {#if won}
-      <FadeOut>
-        {#each Object.entries(letters) as [letter, correct]}
-          <button on:click={() => handleClick(event, word, group)}
-            id={letter}
-            class={correct}
-            >{letter}
-          </button>
-        {/each}
-     </FadeOut>
-     {/if}
-      <h1>How do you spell the word, Red?</h1>
-      <a href="/blue">Next Question</a>
+     {#each Object.entries(letters) as [letter, correct]}
+       <button on:click={() => handleClick(event, word, group)}
+       id={letter}
+       class={correct}
+       >{letter}
+     </button>
+    {/each}
+    <h1>How do you spell the word, Red?</h1>
+    <a href="/blue">Next Question</a>
     </div>
   </section>
 </PageTransition>
