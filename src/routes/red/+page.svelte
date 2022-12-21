@@ -1,4 +1,4 @@
-<script>
+<script context="module">
   import { handleClick, wrongLetters, won } from "../handleClick.svelte";
   import PageTransition from "../pageTransition.svelte";
   import FadeOut from "../FadeOut.svelte";
@@ -11,7 +11,12 @@
     {letter: 'r', distance: 100}, 
     {letter: 'd', distance: -100}
   ]
-  console.log(won)
+  
+  let won = false
+  export function updateStatus() {
+    won = true
+  }
+  
 </script>
 
 <PageTransition>
