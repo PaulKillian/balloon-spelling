@@ -1,7 +1,7 @@
 <script>
   import { handleClick } from "../handleClick.svelte";
   import gsap from 'gsap'
-	import PageTransition from "../pageTransition.svelte";
+  import PageTransition from "../pageTransition.svelte";
   import bgImg from '$lib/images/bg.jpeg';
 
   // document.body.style.backgroundImage = `url(${bgImg})`;
