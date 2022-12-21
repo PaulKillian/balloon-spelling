@@ -53,7 +53,6 @@
 	}
 
   button {
-    font-family: 'Bungee Shade', cursive;
     font-size: 100px;
     color: blue;
     margin: 5px;
