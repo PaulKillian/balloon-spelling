@@ -3,7 +3,7 @@
 </script>
   
 <div
-  out:fly="{{ y: 0, duration: 700 }}" 
+  in:fade="{{ y: 0, duration: 700 }}" 
   >
   <slot/>
 </div>
