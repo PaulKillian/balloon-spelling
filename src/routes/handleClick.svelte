@@ -33,6 +33,7 @@
         string=string.replaceAll(',','');
         tl.to(`#${letter}`, {
         rotationY: 27, y: -250, duration: .5,
+	rotationY: 27, x: -250, duration: .5,
         onComplete() {
           string === word && group.forEach((element) => {
             console.log(element)
