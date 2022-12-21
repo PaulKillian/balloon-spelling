@@ -83,6 +83,7 @@ input {
 }
 button {
   font-family: 'Bungee Shade', cursive;
+  text-shadow: 0 0 2px #565656;
 }
 
 button:focus:not(:focus-visible) {
@@ -105,10 +106,6 @@ button:focus:not(:focus-visible) {
 	position: absolute;
 	width: 1px;
 	white-space: nowrap;
-}
-
-button {
-	text-shadow: 0 0 2px #565656;
 }
 
 section {
