@@ -37,7 +37,6 @@
 	}
 
 	button {
-		font-family: 'Balloon', sans-serif;
     font-size: 300px;
 		color: #EF233C;
 		margin: 5px;
