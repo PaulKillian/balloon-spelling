@@ -40,7 +40,6 @@
 	}
 
 	button {
-		font-family: 'Balloon', sans-serif;
     font-size: 300px;
 		color: #FF9F1C;
 		margin: 5px;
